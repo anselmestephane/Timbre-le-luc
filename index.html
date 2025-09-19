@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le Luc, Capitale de la Correspondance - Un projet culturel unique dédié à l'art postal et aux émotions humaines">
+    <meta name="keywords" content="Le Luc, correspondance, timbres, musée postal, château de Vintimille, émotions">
+    <meta name="author" content="Le Luc, Capitale de la Correspondance">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:title" content="Le Luc, Capitale de la Correspondance">
+    <meta property="og:description" content="Un projet culturel unique dédié à l'art postal et aux émotions humaines">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="">
+    <meta property="twitter:title" content="Le Luc, Capitale de la Correspondance">
+    <meta property="twitter:description" content="Un projet culturel unique dédié à l'art postal et aux émotions humaines">
+    
+    <title>Le Luc, Capitale de la Correspondance</title>
+    
+    <!-- Preconnect to external resources -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- AOS (Animate On Scroll) -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Skip to main content for accessibility -->
+    <a href="#main" class="skip-link">Aller au contenu principal</a>
+    
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="stamp-loader">
+                <i class="fas fa-envelope"></i>
+            </div>
+            <h2>Le Luc se prépare...</h2>
+            <div class="loading-bar">
+                <div class="loading-progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Burger Menu -->
+    <button class="mobile-menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+        <span class="hamburger"></span>
+    </button>
+
+    <!-- Header Hero Section -->
+    <header class="hero-section" role="banner">
+        <div class="hero-background">
+            <div class="floating-elements">
+                <div class="floating-stamp"><i class="fas fa-stamp"></i></div>
+                <div class="floating-envelope"><i class="fas fa-envelope"></i></div>
+                <div class="floating-letter"><i class="fas fa-scroll"></i></div>
+                <div class="floating-heart"><i class="fas fa-heart"></i></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+                <h1 class="hero-title">
+                    <span class="title-main">Le Luc</span>
+                    <span class="title-accent">Capitale de la</span>
+                    <span class="title-highlight">Correspondance</span>
+                </h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="300">
+                    Où chaque timbre raconte une émotion, où chaque lettre porte une âme
+                </p>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#manifeste" class="btn btn-primary">
+                        <i class="fas fa-heart"></i>
+                        Découvrir notre Manifeste
+                    </a>
+                    <a href="#musee" class="btn btn-secondary">
+                        <i class="fas fa-university"></i>
+                        Visiter le Musée
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <p>Explorez notre univers</p>
+        </div>
+    </header>
+
+    <!-- Sticky Navigation -->
+    <nav class="main-navigation" role="navigation" aria-label="Navigation principale">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-envelope-open-text"></i>
+                <span>Le Luc</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#manifeste" data-section="manifeste">
+                    <i class="fas fa-scroll"></i>
+                    <span>Manifeste</span>
+                </a></li>
+                <li><a href="#musee" data-section="musee">
+                    <i class="fas fa-university"></i>
+                    <span>Nouveau Musée</span>
+                </a></li>
+                <li><a href="#timbres" data-section="timbres">
+                    <i class="fas fa-stamp"></i>
+                    <span>Timbres Innovants</span>
+                </a></li>
+                <li><a href="#rues" data-section="rues">
+                    <i class="fas fa-road"></i>
+                    <span>Urbanisme Poétique</span>
+                </a></li>
+                <li><a href="#echanges" data-section="echanges">
+                    <i class="fas fa-globe"></i>
+                    <span>Échanges</span>
+                </a></li>
+                <li><a href="#programmation" data-section="programmation">
+                    <i class="fas fa-calendar-alt"></i>
+                    <span>Programmation</span>
+                </a></li>
+            </ul>
+            <div class="nav-progress">
+                <div class="progress-bar"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main" class="main-content" role="main">
+        <div class="container">
+            <!-- Manifeste Section -->
+            <section id="manifeste" class="content-section manifeste-section">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>
+                        <i class="fas fa-scroll section-icon"></i>
+                        Manifeste
+                    </h2>
+                    <div class="section-decoration"></div>
+                </div>
+                
+                <div class="manifeste-content" data-aos="fade-up" data-aos-delay="200">
+                    <blockquote class="main-quote">
+                        <i class="fas fa-quote-left quote-icon"></i>
+                        Un timbre n'est pas qu'un affranchissement. C'est un fragment d'humanité : 
+                        <span class="emotion-tag amour">amour</span>, 
+                        <span class="emotion-tag rupture">rupture</span>, 
+                        <span class="emotion-tag nouvelles">nouvelles</span>, 
+                        <span class="emotion-tag deuil">deuil</span>, 
+                        <span class="emotion-tag joie">joie</span>, 
+                        <span class="emotion-tag revolte">révolte</span>.
+                    </blockquote>
+                    
+                    <div class="vision-grid">
+                        <div class="vision-card" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="vision-icon">
+                                <i class="fas fa-chess-rook"></i>
+                            </div>
+                            <h3>Le Château</h3>
+                            <p>Cœur battant : collections, ateliers, émotions</p>
+                        </div>
+                        <div class="vision-card" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="vision-icon">
+                                <i class="fas fa-road"></i>
+                            </div>
+                            <h3>Les Rues</h3>
+                            <p>Artères : calligraphie, artistes, boutiques thématiques</p>
+                        </div>
+                        <div class="vision-card" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="vision-icon">
+                                <i class="fas fa-book-open"></i>
+                            </div>
+                            <h3>La Médiathèque</h3>
+                            <p>Mémoire vive : écritures, lectures</p>
+                        </div>
+                        <div class="vision-card" data-aos="zoom-in" data-aos-delay="600">
+                            <div class="vision-icon">
+                                <i class="fas fa-tools"></i>
+                            </div>
+                            <h3>Le Fab Lab</h3>
+                            <p>Main créatrice : fabrication 3D, gravure, timbres numériques</p>
+                        </div>
+                    </div>
+                    
+                    <div class="principe-facteur" data-aos="fade-up" data-aos-delay="700">
+                        <h3>
+                            <i class="fas fa-hammer"></i>
+                            Principe du Facteur Cheval
+                        </h3>
+                        <p>Accumuler des petites pierres (cartes, timbres 3D, voix, récits) pour édifier une œuvre collective qui grandit d'année en année.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Musée Section -->
+            <section id="musee" class="content-section musee-section">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>
+                        <i class="fas fa-university section-icon"></i>
+                        Le Nouveau Musée au Château de Vintimille
+                    </h2>
+                    <div class="section-decoration"></div>
+                </div>
+
+                <div class="parcours-permanent" data-aos="fade-up" data-aos-delay="200">
+                    <h3>
+                        <i class="fas fa-route"></i>
+                        Parcours Permanent
+                    </h3>
+                    
+                    <div class="gallery-grid">
+                        <article class="gallery-card" data-aos="slide-up" data-aos-delay="300">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                                <h4>Galerie I - "Le Timbre, miroir du monde"</h4>
+                            </div>
+                            <div class="card-content">
+                                <p>Histoire des timbres avec focus thématiques :</p>
+                                <div class="emotion-tags">
+                                    <span class="emotion-tag amour">amour</span>
+                                    <span class="emotion-tag rupture">rupture</span>
+                                    <span class="emotion-tag deuil">maladie & mort</span>
+                                    <span class="emotion-tag exil">exils</span>
+                                </div>
+                                <p class="card-description">Découvrez comment les timbres reflètent l'âme humaine à travers cartes d'amoureux, lettres non envoyées, faire-part et cartes d'ailleurs.</p>
+                            </div>
+                        </article>
+
+                        <article class="gallery-card" data-aos="slide-up" data-aos-delay="400">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-tools"></i>
+                                </div>
+                                <h4>Galerie II - "Fabriquer un timbre"</h4>
+                            </div>
+                            <div class="card-content">
+                                <p>Découvrez l'art de la création : papier, gravure, couleurs, oblitération.</p>
+                                <div class="interactive-feature">
+                                    <i class="fas fa-hand-pointer"></i>
+                                    <span>Démonstration interactive</span>
+                                </div>
+                                <p class="card-description">Assistez à une démonstration avec presse manuelle et tamponnez votre carte "Le Luc" - votre propre "petite pierre".</p>
+                            </div>
+                        </article>
+
+                        <article class="gallery-card" data-aos="slide-up" data-aos-delay="500">
+                            <div class="card-header">
+                                <div class="card-icon">
+                                    <i class="fas fa-shipping-fast"></i>
+                                </div>
+                                <h4>Galerie III - "Routes & facteurs"</h4>
+                            </div>
+                            <div class="card-content">
+                                <p>Uniformes, boîtes aux lettres, cartes postales, les tournées.</p>
+                                <div class="interactive-feature">
+                                    <i class="fas fa-lightbulb"></i>
+                                    <span>Faisceau lumineux interactif</span>
+                                </div>
+                                <p class="card-description">Suivez les routes postales sur une mappemonde lumineuse et découvrez notre hommage au Facteur Cheval.</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="emotions-hall" data-aos="fade-up" data-aos-delay="600">
+                    <h3>
+                        <i class="fas fa-heart"></i>
+                        Salle des Émotions
+                    </h3>
+                    <p class="emotions-intro">Espace intime avec 4 alcôves dédiées aux émotions humaines :</p>
+                    
+                    <div class="emotions-grid">
+                        <div class="emotion-alcove amour" data-aos="zoom-in" data-aos-delay="700">
+                            <div class="emotion-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h4>Amour</h4>
+                            <p>Cartes tendres, déclarations timbrées</p>
+                            <div class="emotion-glow"></div>
+                        </div>
+                        <div class="emotion-alcove rupture" data-aos="zoom-in" data-aos-delay="800">
+                            <div class="emotion-icon">
+                                <i class="fas fa-heart-broken"></i>
+                            </div>
+                            <h4>Rupture</h4>
+                            <p>Lettres jamais envoyées, silences postaux</p>
+                            <div class="emotion-glow"></div>
+                        </div>
+                        <div class="emotion-alcove naissance" data-aos="zoom-in" data-aos-delay="900">
+                            <div class="emotion-icon">
+                                <i class="fas fa-baby"></i>
+                            </div>
+                            <h4>Naissance & Mort</h4>
+                            <p>Faire-part, premières cartes, derniers mots</p>
+                            <div class="emotion-glow"></div>
+                        </div>
+                        <div class="emotion-alcove nouvelles" data-aos="zoom-in" data-aos-delay="1000">
+                            <div class="emotion-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <h4>Nouvelles</h4>
+                            <p>Correspondances du monde, échos lointains</p>
+                            <div class="emotion-glow"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Timbres Section -->
+            <section id="timbres" class="content-section timbres-section">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>
+                        <i class="fas fa-stamp section-icon"></i>
+                        Les Timbres "Au-delà du Timbre"
+                    </h2>
+                    <div class="section-decoration"></div>
+                </div>
+
+                <div class="timbres-grid">
+                    <div class="timbre-type" data-aos="slide-right" data-aos-delay="200">
+                        <div class="timbre-header">
+                            <div class="timbre-icon">
+                                <i class="fas fa-cube"></i>
+                            </div>
+                            <h3>Timbre 3D (bas-relief)</h3>
+                        </div>
+                        <div class="timbre-content">
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    Dans le musée : 6 bas-reliefs racontant 6 émotions
+                                </li>
+                                <li>
+                                    <i class="fas fa-check-circle"></i>
+                                    En ville : pièces sur socles autoportés, réversibles
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timbre-type" data-aos="slide-left" data-aos-delay="300">
+                        <div class="timbre-header">
+                            <div class="timbre-icon">
+                                <i class="fas fa-cloud"></i>
+                            </div>
+                            <h3>Timbre dématérialisé</h3>
+                        </div>
+                        <div class="timbre-content">
+                            <div class="digital-features">
+                                <div class="digital-badge">
+                                    <i class="fas fa-shield-alt"></i>
+                                    Éthique & Sobriété
+                                </div>
+                                <p>"Cachet numérique du Luc" : sceau visible insérable dans l'e-mail</p>
+                            </div>
+                            <div class="series-tags">
+                                <span class="series-tag">Amour</span>
+                                <span class="series-tag">Condoléances</span>
+                                <span class="series-tag">Naissance</span>
+                                <span class="series-tag">Pardon</span>
+                                <span class="series-tag">Merci</span>
+                            </div>
+                            <p class="ethics-note">
+                                <i class="fas fa-leaf"></i>
+                                Zéro traque publicitaire, données hébergées localement
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timbre-type" data-aos="slide-right" data-aos-delay="400">
+                        <div class="timbre-header">
+                            <div class="timbre-icon">
+                                <i class="fas fa-qrcode"></i>
+                            </div>
+                            <h3>Timbre poétique QR</h3>
+                        </div>
+                        <div class="timbre-content">
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    12 plaques émaillées en ville
+                                </li>
+                                <li>
+                                    <i class="fas fa-microphone"></i>
+                                    Chaque QR fait entendre un poème lu par un habitant
+                                </li>
+                                <li>
+                                    <i class="fas fa-map"></i>
+                                    Cartographie sur application web légère
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timbre-type" data-aos="slide-left" data-aos-delay="500">
+                        <div class="timbre-header">
+                            <div class="timbre-icon">
+                                <i class="fas fa-puzzle-piece"></i>
+                            </div>
+                            <h3>Timbre énigmatique</h3>
+                        </div>
+                        <div class="timbre-content">
+                            <div class="challenge-badge">
+                                <i class="fas fa-trophy"></i>
+                                Grande chasse annuelle en 10 étapes
+                            </div>
+                            <ul class="feature-list">
+                                <li>
+                                    <i class="fas fa-spell-check"></i>
+                                    Épreuves : acrostiches, oblitérations à trouver
+                                </li>
+                                <li>
+                                    <i class="fas fa-qrcode"></i>
+                                    Micro-codes QR, linogravure
+                                </li>
+                                <li>
+                                    <i class="fas fa-medal"></i>
+                                    Récompense : Passeport "Facteur d'Honneur"
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Rues Section -->
+            <section id="rues" class="content-section rues-section">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>
+                        <i class="fas fa-road section-icon"></i>
+                        Les Rues Adjacentes — Urbanisme Poétique
+                    </h2>
+                    <div class="section-decoration"></div>
+                </div>
+
+                <div class="rues-container">
+                    <div class="rue-card" data-aos="fade-right" data-aos-delay="200">
+                        <div class="rue-header">
+                            <div class="rue-icon">
+                                <i class="fas fa-pen-fancy"></i>
+                            </div>
+                            <h3>Rue des Écritures du Monde</h3>
+                        </div>
+                        <div class="rue-content">
+                            <div class="rue-features">
+                                <div class="rue-feature">
+                                    <i class="fas fa-store-alt"></i>
+                                    <span>Vitrophanies calligraphiques sur les vitrines</span>
+                                </div>
+                                <div class="rue-feature">
+                                    <i class="fas fa-book"></i>
+                                    <span>Deux "vitrines-bibliothèques" avec objets postaux</span>
+                                </div>
+                                <div class="rue-feature">
+                                    <i class="fas fa-road"></i>
+                                    <span>Pavés gravés avec fragments de lettres réelles</span>
+                                </div>
+                                <div class="rue-feature">
+                                    <i class="fas fa-chalkboard-teacher"></i>
+                                    <span>Ateliers de trottoir : initiation plume/kanji/arabe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rue-card" data-aos="fade-left" data-aos-delay="300">
+                        <div class="rue-header">
+                            <div class="rue-icon">
+                                <i class="fas fa-walking"></i>
+                            </div>
+                            <h3>Allée des Messagers</h3>
+                        </div>
+                        <div class="rue-content">
+                            <div class="rue-features">
+                                <div class="rue-feature">
+                                    <i class="fas fa-user-tie"></i>
+                                    <span>4 silhouettes de facteurs en métal découpé</span>
+                                </div>
+                                <div class="rue-feature">
+                                    <i class="fas fa-mailbox"></i>
+                                    <span>Boîte aux vœux : cartes gratuites à écrire sur place</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rue-card" data-aos="fade-right" data-aos-delay="400">
+                        <div class="rue-header">
+                            <div class="rue-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Rue des Artistes</h3>
+                        </div>
+                        <div class="rue-content">
+                            <div class="rue-features">
+                                <div class="rue-feature">
+                                    <i class="fas fa-hammer"></i>
+                                    <span>Ateliers/galeries : gravure, risographie, calligraphie</span>
+                                </div>
+                                <div class="rue-feature">
+                                    <i class="fas fa-store"></i>
+                                    <span>Vitrines tournantes "timbres vivants"</span>
+                                </div>
+                                <div class="rue-feature">
+                                    <i class="fas fa-calendar"></i>
+                                    <span>Marché des petites estampes chaque premier dimanche</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Échanges Section -->
+            <section id="echanges" class="content-section echanges-section">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>
+                        <i class="fas fa-globe section-icon"></i>
+                        Échanges Internationaux & Jumelages
+                    </h2>
+                    <div class="section-decoration"></div>
+                </div>
+
+                <div class="echanges-grid" data-aos="fade-up" data-aos-delay="200">
+                    <div class="echange-card" data-aos="zoom-in" data-aos-delay="300">
+                        <div class="echange-icon">
+                            <i class="fas fa-user-friends"></i>
+                        </div>
+                        <h3>Résidences "Timbres vivants"</h3>
+                        <p>Artistes calligraphes, graveurs, illustrateurs en résidence</p>
+                    </div>
+
+                    <div class="echange-card" data-aos="zoom-in" data-aos-delay="400">
+                        <div class="echange-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Jumelages culturels</h3>
+                        <p>Partenariats avec un musée postal européen et une école d'art</p>
+                    </div>
+
+                    <div class="echange-card" data-aos="zoom-in" data-aos-delay="500">
+                        <div class="echange-icon">
+                            <i class="fas fa-exchange-alt"></i>
+                        </div>
+                        <h3>Bourse aux Lettres</h3>
+                        <p>Échanges de mail-art, cartes, correspondances du monde entier</p>
+                    </div>
+
+                    <div class="echange-card" data-aos="zoom-in" data-aos-delay="600">
+                        <div class="echange-icon">
+                            <i class="fas fa-route"></i>
+                        </div>
+                        <h3>"Semaine des Routes Postales"</h3>
+                        <p>Conférences, films, ateliers géographiques et historiques</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Programmation Section -->
+            <section id="programmation" class="content-section programmation-section">
+                <div class="section-header" data-aos="fade-up">
+                    <h2>
+                        <i class="fas fa-calendar-alt section-icon"></i>
+                        Programmation Événementielle
+                    </h2>
+                    <div class="section-decoration"></div>
+                </div>
+
+                <div class="programmation-container">
+                    <div class="festival-main" data-aos="slide-up" data-aos-delay="200">
+                        <div class="festival-header">
+                            <div class="festival-icon">
+                                <i class="fas fa-sun"></i>
+                            </div>
+                            <h3>Festival "Oblitérations" (été)</h3>
+                            <span class="festival-season">Événement Principal</span>
+                        </div>
+                        <div class="festival-content">
+                            <div class="festival-activities">
+                                <div class="activity">
+                                    <i class="fas fa-store"></i>
+                                    <span>Marché aux timbres étendu</span>
+                                </div>
+                                <div class="activity">
+                                    <i class="fas fa-moon"></i>
+                                    <span>Nuit du Totem-Tampon : tamponnage géant participatif</span>
+                                </div>
+                                <div class="activity">
+                                    <i class="fas fa-music"></i>
+                                    <span>Concerts "musiques de facteurs"</span>
+                                </div>
+                                <div class="activity">
+                                    <i class="fas fa-video"></i>
+                                    <span>Projection sur façade</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="event-grid">
+                        <div class="event-card" data-aos="fade-right" data-aos-delay="300">
+                            <div class="event-icon">
+                                <i class="fas fa-moon"></i>
+                            </div>
+                            <h4>Nocturnes du Timbre</h4>
+                            <ul>
+                                <li>Visite courte + atelier</li>
+                                <li>Lecture de lettres</li>
+                            </ul>
+                        </div>
+
+                        <div class="event-card" data-aos="fade-left" data-aos-delay="400">
+                            <div class="event-icon">
+                                <i class="fas fa-book-reader"></i>
+                            </div>
+                            <h4>Cycle "Lettres de..." (médiathèque)</h4>
+                            <div class="letter-types">
+                                <span class="letter-tag">Amour</span>
+                                <span class="letter-tag">Rupture</span>
+                                <span class="letter-tag">Deuil</span>
+                                <span class="letter-tag">Guerre</span>
+                                <span class="letter-tag">Exil</span>
+                            </div>
+                        </div>
+
+                        <div class="event-card school-program" data-aos="fade-up" data-aos-delay="500">
+                            <div class="event-icon">
+                                <i class="fas fa-graduation-cap"></i>
+                            </div>
+                            <h4>Programmation Scolaire</h4>
+                            <div class="school-levels">
+                                <div class="school-level">
+                                    <strong>Cycle 2:</strong> "Ma première carte"
+                                </div>
+                                <div class="school-level">
+                                    <strong>Cycle 3/Collège:</strong> "Linogravure & oblitération"
+                                </div>
+                                <div class="school-level">
+                                    <strong>Lycée:</strong> "Typographie & censure"
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main" data-aos="fade-up">
+                    <div class="footer-brand">
+                        <i class="fas fa-envelope-open-text"></i>
+                        <h3>Le Luc, Capitale de la Correspondance</h3>
+                    </div>
+                    <blockquote class="footer-quote">
+                        "Accumuler des petites pierres pour édifier une œuvre collective qui grandit d'année en année"
+                    </blockquote>
+                </div>
+                
+                <div class="footer-links" data-aos="fade-up" data-aos-delay="200">
+                    <div class="footer-section">
+                        <h4>Navigation</h4>
+                        <ul>
+                            <li><a href="#manifeste">Manifeste</a></li>
+                            <li><a href="#musee">Musée</a></li>
+                            <li><a href="#timbres">Timbres Innovants</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Découvrir</h4>
+                        <ul>
+                            <li><a href="#rues">Urbanisme Poétique</a></li>
+                            <li><a href="#echanges">Échanges</a></li>
+                            <li><a href="#programmation">Programmation</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section contact-info">
+                        <h4>Contact</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Le Luc, France</p>
+                        <p><i class="fas fa-envelope"></i> contact@leluc-correspondance.fr</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom" data-aos="fade-up" data-aos-delay="400">
+                <p>&copy; 2024 Le Luc, Capitale de la Correspondance. Tous droits réservés.</p>
+                <div class="footer-emotions">
+                    <span class="footer-emotion">❤️</span>
+                    <span class="footer-emotion">📮</span>
+                    <span class="footer-emotion">✉️</span>
+                    <span class="footer-emotion">🎨</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button id="back-to-top" class="back-to-top" aria-label="Retour en haut">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

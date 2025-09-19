@@ -1,0 +1,598 @@
+/* ==========================================================================
+   Responsive Design Avancé et Optimisations
+   Le Luc - Capitale de la Correspondance
+   ========================================================================== */
+
+/* Variables pour les breakpoints */
+:root {
+    --breakpoint-xs: 375px;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+    --breakpoint-xxl: 1400px;
+}
+
+/* ==========================================================================
+   MICRO-INTERACTIONS MOBILES
+   ========================================================================== */
+
+/* Amélioration du touch feedback */
+@media (hover: none) and (pointer: coarse) {
+    .btn,
+    .nav-links a,
+    .emotion-alcove,
+    .vision-card,
+    .gallery-card {
+        transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    
+    .btn:active,
+    .nav-links a:active {
+        transform: scale(0.95);
+    }
+    
+    .emotion-alcove:active,
+    .vision-card:active,
+    .gallery-card:active {
+        transform: scale(0.98);
+    }
+}
+
+/* ==========================================================================
+   BREAKPOINT XS - TRÈS PETITS ÉCRANS (375px et moins)
+   ========================================================================== */
+
+@media (max-width: 375px) {
+    :root {
+        --spacing-xs: 0.25rem;
+        --spacing-sm: 0.5rem;
+        --spacing-md: 1rem;
+        --spacing-lg: 1.5rem;
+        --spacing-xl: 2rem;
+    }
+    
+    .container {
+        padding: 0 var(--spacing-sm);
+    }
+    
+    .hero-content {
+        padding: var(--spacing-md);
+    }
+    
+    .title-main {
+        font-size: 2rem !important;
+    }
+    
+    .title-highlight {
+        font-size: 1.5rem !important;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    .section-header h2 {
+        font-size: 1.8rem;
+    }
+    
+    .content-section {
+        padding: var(--spacing-md);
+        margin-bottom: var(--spacing-lg);
+    }
+    
+    .main-quote {
+        font-size: 1.1rem;
+        padding: var(--spacing-sm);
+    }
+    
+    .vision-grid,
+    .gallery-grid,
+    .emotions-grid,
+    .echanges-grid,
+    .event-grid {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .hero-cta {
+        gap: var(--spacing-sm);
+    }
+    
+    .btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ==========================================================================
+   BREAKPOINT SM - PETITS ÉCRANS (576px)
+   ========================================================================== */
+
+@media (min-width: 376px) and (max-width: 576px) {
+    .emotions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--spacing-sm);
+    }
+    
+    .vision-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .festival-activities {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   BREAKPOINT MD - TABLETTES (768px)
+   ========================================================================== */
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .nav-brand {
+        font-size: 1.2rem;
+    }
+    
+    .nav-links {
+        gap: var(--spacing-sm);
+    }
+    
+    .nav-links span {
+        display: none;
+    }
+    
+    .emotions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .timbres-grid .timbre-type:nth-child(even) {
+        margin-left: 0;
+        max-width: 100%;
+    }
+    
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-md);
+    }
+}
+
+/* ==========================================================================
+   BREAKPOINT LG - PETITS DESKTOPS (992px)
+   ========================================================================== */
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .container {
+        max-width: 90%;
+    }
+    
+    .nav-links {
+        gap: var(--spacing-sm);
+    }
+    
+    .vision-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .echanges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================================================
+   BREAKPOINT XL - GRANDS ÉCRANS (1200px+)
+   ========================================================================== */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+    
+    .hero-content {
+        max-width: 900px;
+    }
+    
+    .title-main {
+        font-size: 5rem;
+    }
+    
+    .title-highlight {
+        font-size: 3.5rem;
+    }
+    
+    .vision-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
+    .emotions-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .echanges-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    
+    .event-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* ==========================================================================
+   BREAKPOINT XXL - TRÈS GRANDS ÉCRANS (1400px+)
+   ========================================================================== */
+
+@media (min-width: 1400px) {
+    .container {
+        max-width: 1400px;
+    }
+    
+    .title-main {
+        font-size: 6rem;
+    }
+    
+    .title-highlight {
+        font-size: 4rem;
+    }
+    
+    .section-header h2 {
+        font-size: 3.5rem;
+    }
+    
+    .content-section {
+        padding: var(--spacing-xl) calc(var(--spacing-xl) * 1.5);
+    }
+}
+
+/* ==========================================================================
+   ORIENTATION LANDSCAPE SUR MOBILE
+   ========================================================================== */
+
+@media (max-height: 500px) and (orientation: landscape) {
+    .hero-section {
+        min-height: 100vh;
+        padding: var(--spacing-md) 0;
+    }
+    
+    .hero-content {
+        padding: var(--spacing-sm);
+    }
+    
+    .title-main {
+        font-size: 2.5rem;
+    }
+    
+    .title-highlight {
+        font-size: 1.8rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    .scroll-indicator {
+        display: none;
+    }
+    
+    .mobile-menu-toggle {
+        top: var(--spacing-sm);
+        right: var(--spacing-sm);
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* ==========================================================================
+   AMÉLIORATION DU MENU MOBILE
+   ========================================================================== */
+
+@media (max-width: 768px) {
+    .main-navigation.mobile-open {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: 1000;
+    }
+    
+    .main-navigation.mobile-open .nav-links {
+        animation: mobileMenuSlideIn 0.3s ease-out forwards;
+    }
+    
+    .main-navigation.mobile-open .nav-links li {
+        opacity: 0;
+        animation: mobileMenuItemFadeIn 0.3s ease-out forwards;
+    }
+    
+    .main-navigation.mobile-open .nav-links li:nth-child(1) { animation-delay: 0.1s; }
+    .main-navigation.mobile-open .nav-links li:nth-child(2) { animation-delay: 0.2s; }
+    .main-navigation.mobile-open .nav-links li:nth-child(3) { animation-delay: 0.3s; }
+    .main-navigation.mobile-open .nav-links li:nth-child(4) { animation-delay: 0.4s; }
+    .main-navigation.mobile-open .nav-links li:nth-child(5) { animation-delay: 0.5s; }
+    .main-navigation.mobile-open .nav-links li:nth-child(6) { animation-delay: 0.6s; }
+    
+    @keyframes mobileMenuSlideIn {
+        from {
+            transform: translateY(-100%);
+        }
+        to {
+            transform: translateY(0);
+        }
+    }
+    
+    @keyframes mobileMenuItemFadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+}
+
+/* ==========================================================================
+   OPTIMISATIONS POUR LES ÉCRANS HAUTE DENSITÉ
+   ========================================================================== */
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .hero-section,
+    .content-section {
+        /* Optimisations pour les écrans Retina */
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+    
+    .section-icon,
+    .vision-icon,
+    .emotion-icon {
+        /* Amélioration de la netteté des icônes */
+        transform: translateZ(0);
+        backface-visibility: hidden;
+    }
+}
+
+/* ==========================================================================
+   MODE SOMBRE RESPONSIVE
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-gradient: linear-gradient(135deg, #4a6cf7 0%, #667eea 100%);
+        --secondary-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    body {
+        background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+        color: #e0e6ed;
+    }
+    
+    .content-section {
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    
+    .main-navigation {
+        background: rgba(26, 26, 46, 0.95);
+        backdrop-filter: blur(20px);
+    }
+    
+    .nav-links a {
+        color: #e0e6ed;
+    }
+    
+    .emotion-tag {
+        background: rgba(255, 255, 255, 0.1);
+        color: #e0e6ed;
+    }
+}
+
+/* ==========================================================================
+   PRINT RESPONSIVE
+   ========================================================================== */
+
+@media print {
+    @page {
+        margin: 1cm;
+        size: A4;
+    }
+    
+    .hero-section {
+        page-break-after: always;
+    }
+    
+    .content-section {
+        page-break-inside: avoid;
+        margin-bottom: 1cm;
+    }
+    
+    .gallery-grid,
+    .vision-grid,
+    .emotions-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5cm;
+    }
+    
+    .floating-elements,
+    .loading-screen,
+    .mobile-menu-toggle,
+    .back-to-top,
+    .scroll-indicator,
+    .letter-particles {
+        display: none !important;
+    }
+}
+
+/* ==========================================================================
+   ACCESSIBILITÉ RESPONSIVE
+   ========================================================================== */
+
+/* Amélioration de la taille des zones de touch pour mobile */
+@media (max-width: 768px) {
+    .btn,
+    .nav-links a,
+    .emotion-alcove,
+    .back-to-top,
+    .mobile-menu-toggle {
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .nav-links a {
+        padding: var(--spacing-sm) var(--spacing-md);
+    }
+}
+
+/* Focus amélioré pour les appareils tactiles */
+@media (hover: none) {
+    .btn:focus,
+    .nav-links a:focus,
+    .emotion-alcove:focus {
+        outline: 3px solid #667eea;
+        outline-offset: 2px;
+    }
+}
+
+/* ==========================================================================
+   OPTIMISATIONS DE PERFORMANCE RESPONSIVE
+   ========================================================================== */
+
+/* Réduction des animations sur les appareils moins performants */
+@media (max-width: 768px) {
+    .floating-elements > div {
+        animation-duration: 8s;
+    }
+    
+    .vision-card::after,
+    .gallery-card::after,
+    .echange-card::after {
+        display: none;
+    }
+    
+    .letter-particles {
+        display: none;
+    }
+}
+
+/* Optimisations pour les connexions lentes */
+@media (prefers-reduced-data: reduce) {
+    .floating-elements,
+    .letter-particles {
+        display: none;
+    }
+    
+    .hero-background {
+        display: none;
+    }
+    
+    .content-section::before {
+        display: none;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE TYPOGRAPHY
+   ========================================================================== */
+
+/* Échelle typographique fluide */
+@media (min-width: 320px) and (max-width: 1200px) {
+    .title-main {
+        font-size: clamp(2rem, 8vw, 5rem);
+    }
+    
+    .title-highlight {
+        font-size: clamp(1.5rem, 6vw, 3.5rem);
+    }
+    
+    .hero-subtitle {
+        font-size: clamp(1rem, 3vw, 1.4rem);
+    }
+    
+    .section-header h2 {
+        font-size: clamp(1.8rem, 5vw, 3rem);
+    }
+    
+    .main-quote {
+        font-size: clamp(1.1rem, 3vw, 1.6rem);
+    }
+}
+
+/* ==========================================================================
+   GRILLES ADAPTATIVES AVANCÉES
+   ========================================================================== */
+
+/* Grille fluide pour les cartes */
+.adaptive-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: var(--spacing-md);
+}
+
+/* Grille responsive pour les émotions */
+.emotions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    gap: var(--spacing-md);
+}
+
+@media (max-width: 480px) {
+    .emotions-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ==========================================================================
+   ÉTATS SPÉCIAUX RESPONSIVE
+   ========================================================================== */
+
+/* Mode offline */
+.offline .letter-particles,
+.offline .floating-elements {
+    display: none;
+}
+
+/* Batterie faible */
+@media (battery: 2) {
+    .floating-elements > div,
+    .letter-particles .letter-particle {
+        animation-play-state: paused;
+    }
+}
+
+/* ==========================================================================
+   RESPONSIVE CONTAINERS QUERIES (FUTUR)
+   ========================================================================== */
+
+/* Préparation pour les Container Queries */
+.content-section {
+    container-type: inline-size;
+}
+
+@container (max-width: 600px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@container (min-width: 800px) {
+    .vision-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
